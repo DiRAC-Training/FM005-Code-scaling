@@ -9,7 +9,7 @@ questions:
 - "How do I capture the output of a program that is run on a node in the
   cluster?"
 objectives:
-- "Submit a simple script to the cluster using Slurm."
+- "Submit a simple script to the cluster using Slurm. "
 - "Monitor the execution of jobs using command line tools."
 - "Describe the basic states through which a submitted job progresses to completion or failure."
 - "Inspect the output and error files of your jobs."
