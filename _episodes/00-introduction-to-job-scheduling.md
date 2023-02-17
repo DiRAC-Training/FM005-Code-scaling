@@ -270,7 +270,7 @@ run.
 
 It's best if your requests accurately reflect your job's requirements. We'll
 talk more about how to make sure that you're using resources effectively in a
-later episode of this lesson.
+later topic of this module.
 
 > ## Job environment variables
 > 
