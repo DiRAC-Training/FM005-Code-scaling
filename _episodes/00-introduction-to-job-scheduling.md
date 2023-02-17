@@ -136,6 +136,10 @@ Note that depending on the system, other minimal parameters may also be necessar
 We can specify them on the command line when submitting our job, like the following. Our job is very short running, so let's just give it a maximum wall time of 1 minute:
 
 ```
+>##Slurm in DiRAC
+>In DiRAC we do not use your username when submitting a job to Slurm. We generally use a project code instead. This is because each project is given an allocation of time on one or more of our services, and to track that allocation we need to use the project code.
+{: .Info}
+
 $ sbatch --account=yourAccount --partition=cosma7 --time=00:01:00 example-job.sh
 ```
 {: .language-bash}
