@@ -129,7 +129,7 @@ np= 1;    Time=4.062785s;    PI=3.14159265459;	Error=0.00000003182
 
 > ## How Should I use Login Nodes?
 > 
-> So far we've been testing our codes on a COSMA login node. This is fine for short runs and a bit of code testing, but it's very important to note that we should not run anything too intensive (i.e. using too many cores or memory) or long-running directly on a login node, otherwise this could degrade system performance for other users. So we must always remember to use login nodes responsibly!
+> So far we've been testing our codes on a login node. This is fine for short runs and a bit of code testing, but it's very important to note that we should not run anything too intensive (i.e. using too many cores or memory) or long-running directly on a login node, otherwise this could degrade system performance for other users. So we must always remember to use login nodes responsibly!
 {: .callout}
 
 So now we've got our code configured running directly on the resource, let's submit it as a batch job to SLURM.
@@ -160,7 +160,8 @@ So now we've got our code configured running directly on the resource, let's sub
 > > #SBATCH --ntasks 16
 > > #SBATCH --mem 1M
 > > #SBATCH --chdir /cosma/home/yourProject/yourUsername/HPC-Skills-Pi/Scaling/MPI
-> > 
+> >
+> > module purge
 > > module load gnu_comp/11.1.0
 > > module load openmpi/4.1.4
 > > 
