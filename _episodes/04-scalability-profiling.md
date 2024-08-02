@@ -25,7 +25,7 @@ Let's now look at how we can determine the scalability characteristics for our e
 
 ## Characterising our π Code's Performance
 
-When we ran our π code in a previous episode, we got some timing results for running our code over an increasing number of cores. An example run may look something like:
+When we ran our π code in a previous topic "Running Example Code", we got some timing results for running our code over an increasing number of cores. An example run may look something like:
 
 | Cores (n) | Run Time (s) | Result        | Error         | Speedup |
 |-----------|--------------|---------------|---------------|---------|
@@ -232,9 +232,9 @@ The problem with strong scaling is as we increase the number of cores, then the 
 | 8         | 4.356564 | 3.14159265371 | 0.00000000397 | 87.52%           |
 | 16        | 4.643724 | 3.14159265365 | 0.00000000198 | 93.78%           |
 
-![Improved Error vs Cores]({{ site.url }}{{ site.baseurl }}/fig/scalability-improved-error-vs-cores.png){: width="650px"}
-
 As you can see, the run times are similar. Just slightly increasing. However, the accuracy of the calculated value of π has increased. In fact our percentage improvement is nearly in step with the number of cores.
+
+![Improved Error vs Cores]({{ site.url }}{{ site.baseurl }}/fig/scalability-improved-error-vs-cores.png){: width="650px"}
 
 When presenting your weak scaling it is common to show how well it scales, this is shown below:
 

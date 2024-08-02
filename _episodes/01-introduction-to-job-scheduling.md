@@ -136,7 +136,11 @@ Note that depending on the system, other minimal parameters may also be necessar
 We can specify them on the command line when submitting our job, like the following. Our job is very short running, so let's just give it a maximum wall time of 1 minute:
 
 ```
-$ sbatch --account=yourAccount --partition=cosma7 --time=00:01:00 example-job.sh
+>##Slurm in DiRAC
+>In DiRAC we do not use your username when submitting a job to Slurm. We generally use a project code instead. This is because each project is given an allocation of time on one or more of our services, and to track that allocation we need to use the project code.
+{: .Info}
+
+$ sbatch --account=yourProjectCode --partition=cosma7 --time=00:01:00 example-job.sh
 ```
 {: .language-bash}
 
@@ -218,7 +222,7 @@ the following (amending `yourAccount` accordingly):
 
 ```
 #!/usr/bin/env bash
-#SBATCH --account=yourAccount
+#SBATCH --account=yourProjectCode
 #SBATCH --partition=cosma7
 #SBATCH --time=00:01:00
 #SBATCH --job-name=hello-world
@@ -270,7 +274,7 @@ run.
 
 It's best if your requests accurately reflect your job's requirements. We'll
 talk more about how to make sure that you're using resources effectively in a
-later episode of this lesson.
+later topic of this module.
 
 > ## Job environment variables
 > 
@@ -286,7 +290,7 @@ later episode of this lesson.
 > > 
 > > ``` bash
 > > #!/usr/bin/env bash
-> > #SBATCH --account=yourAccount
+> > #SBATCH --account=yourProjectCode
 > > #SBATCH --partition=cosma7
 > > #SBATCH --time=00:00:30
 > > #SBATCH --job-name=hello-world
@@ -309,7 +313,7 @@ wall time, and attempt to run a job for two minutes.
 
 ```
 #!/usr/bin/env bash
-#SBATCH --account=yourAccount
+#SBATCH --account=yourProjectCode
 #SBATCH --partition=cosma7
 #SBATCH --time=00:00:30
 #SBATCH --job-name=long-job
@@ -431,7 +435,7 @@ can run these types of tasks as a one-off with `srun`.
 `srun` runs a single command on the cluster and then exits. Let’s demonstrate this by running the `hostname` command with `srun`. (We can cancel an `srun` job with `Ctrl-C`.) Note that we still need to specify the account, partition, and expected runtime as we would with any job, but in the case of `srun`, we can only specify these on the command line:
 
 ```
-[yourUsername@login7a [cosma7] ~]$ srun --account=yourAccount --partition=cosma7 --time=00:01:00 hostname
+[yourUsername@login7a [cosma7] ~]$ srun --account=yourProjectCode --partition=cosma7 --time=00:01:00 hostname
 ```
 {: .language-bash}
 
@@ -447,7 +451,7 @@ somenode.cosma7.network
 Sometimes, you will need a lot of resource for interactive use. Perhaps it’s our first time running an analysis or we are attempting to debug something that went wrong with a previous job. Fortunately, Slurm makes it easy to start an interactive job with `srun`:
 
 ```
-[yourUsername@login7a [cosma7] ~]$ srun --account=yourAccount --partition=cosma7 --time=00:01:00 --pty bash
+[yourUsername@login7a [cosma7] ~]$ srun --account=yourProjectCode --partition=cosma7 --time=00:01:00 --pty bash
 ```
 {: .language-bash}
 
