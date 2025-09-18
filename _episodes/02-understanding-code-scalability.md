@@ -46,9 +46,9 @@ Once we understand these scaling profiles for our code, we'll have an idea of th
 As a developer, if your code happens to take too long to run or scales badly it's tempting to dive in and try to optimise it straight away. But before you do, consider the following [rules of optimisation](https://hackernoon.com/the-rules-of-optimization-why-so-many-performance-efforts-fail-cf06aad89099):
 
 1. Don't,
-2. Don't... *yet*, and,
+2. Don't... *yet*,
 
-Another rule is sometimes added:
+and, another rule is sometimes added:
 
 3. If you must optimise your code, *profile* it first.
 
