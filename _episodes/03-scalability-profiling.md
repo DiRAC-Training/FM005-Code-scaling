@@ -185,7 +185,7 @@ Using this formula we can calculate a table of the expected maximum speedup for 
 > > 
 > > How closely do these estimations correlate with your actual results to 16 cores? They should hopefully be similar, since we're working off averages for our serial and parallel proportions.
 > >
-> > Hopefully from your results you will find that we can get close to the maximum speedup calculated earlier, but it requires ever more resources. From our own trial runs, we expect the speedup to drop below 1% at 4096 cores, but it is expected that we would never run this code at these core counts as it would be a waste of resources.
+> > Hopefully from your results you will find that we can get close to the maximum speedup calculated earlier, but it requires even more resources. From our own trial runs, we expect the speedup to drop below 1% at 4096 cores, but it is expected that we would never run this code at these core counts as it would be a waste of resources.
 > >
 > > Using the `3.9967` T<sub>1</sub> starting value, we get the following estimations:
 > >
