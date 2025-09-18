@@ -74,7 +74,7 @@ A common question is why aren't all these software features accessible immediate
 > Helpfully, we can see which modules are available on a particular system by using the command `module avail`. This is particularly useful when developing software for systems we wish to support, since it tells us explicitly what software we can use as well as the versions supported for each.
 {: .callout}
 
-We know that our code uses OpenMPI, and that we need to compile it using an MPI compiler. If we do `module avail`, we can see that there are a few implementations of Open MPI available (indicated by `openmpi`). If we use `module avail openmpi`, we can differentiate these more clearly:
+We know that our code uses OpenMPI and that we need to compile it using an MPI compiler. If we do `module avail`, we can see that there are a few implementations of Open MPI available (indicated by `openmpi`). If we use `module avail openmpi`, we can differentiate these more clearly:
 
 ~~~
 ---------------------------------------- /cosma/local/Modules/modulefiles/mpi -----------------------------------------
