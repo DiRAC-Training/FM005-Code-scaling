@@ -47,7 +47,7 @@ the concepts remain the same.
 
 The most basic use of the scheduler is to run a command non-interactively. Any
 command (or series of commands) that you want to run on the cluster is called a
-_job_, and the process of using a scheduler to run the job is called _batch job
+_job_ and the process of using a scheduler to run the job is called _batch job
 submission_.
 
 In this case, the job we want to run is a shell script -- essentially a
