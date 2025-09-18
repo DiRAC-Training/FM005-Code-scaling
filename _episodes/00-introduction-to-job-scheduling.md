@@ -181,7 +181,7 @@ You can get a full list of job status codes via the [SLURM documentation](https:
 
 > ## Where's the Output?
 >
-> On the login node, this script printed output to the terminal -- but
+> On the login node, this script printed output to the terminal; but
 > now, when `squeue` shows the job has finished,
 > nothing was printed to the terminal.
 >
