@@ -213,7 +213,7 @@ Using this formula we can calculate a table of the expected maximum speedup for 
 >
 > > ## Solution
 > >
-> > Within DiRAC we do not impose such a limit, this is a decision made by you. Every project has an allocation and it is up to you to decide what is efficient use of your allocation. In this case I personally would not waste my allocation on any runs over 128 cores.
+> > Within DiRAC we do not impose such a limit, this is a decision made by you. Every project has an allocation and it is up to you to decide what is efficient use of your allocation. In this case, I personally would not waste my allocation on any runs over 128 cores.
 >{: .solution}
 {: .challenge}
 
