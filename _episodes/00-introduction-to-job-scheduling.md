@@ -448,7 +448,7 @@ somenode.cosma7.network
 
 ### Interactive jobs
 
-Sometimes, you will need a lot of resource for interactive use. Perhaps it’s our first time running an analysis or we are attempting to debug something that went wrong with a previous job. Fortunately, Slurm makes it easy to start an interactive job with `srun`:
+Sometimes you will need a lot of resource for interactive use. Perhaps it’s our first time running an analysis, or we are attempting to debug something that went wrong with a previous job. Fortunately, Slurm makes it easy to start an interactive job with `srun`:
 
 ```
 [yourUsername@login7a [cosma7] ~]$ srun --account=yourProjectCode --partition=cosma7 --time=00:01:00 --pty bash
