@@ -30,7 +30,7 @@ There are two primary measures of execution time we need to consider for any giv
 
 <!-- In some cases where you are running on a system which is shared by other users, your run may be swapped out to enable other users to use the system. Most systems within DiRAC are configured to have exclusive access. So your code will not be competing with other programs on the compute nodes, but may be competing on the network fabric, or for storage bandwidth. -->
 
-## How can we Characterise a Code's Scalability?
+## How can we characterise a code's scalability?
 
 Before we consider running and using code on an HPC resource, we need to understand its *scaling profile* - so we can determine how the code will scale as we add more CPU cores to running it. That way, when we run code we can request a suitable amount of resources with minimal waste. There are two types of scaling profile we need to determine:
 
@@ -41,7 +41,7 @@ Before we consider running and using code on an HPC resource, we need to underst
 
 Once we understand these scaling profiles for our code, we'll have an idea of the **speedup** capability when using multiple cores. These measurements give us good indications for how our code should be specified on DiRAC, in terms of the overall job size and the amount of resources that should be requested.
 
-## I'm a Developer, Should I Optimise my Code?
+## I'm a developer, should I optimise my code?
 
 As a developer, if your code happens to take too long to run or scales badly it's tempting to dive in and try to optimise it straight away. But before you do, consider the following [rules of optimisation](https://hackernoon.com/the-rules-of-optimization-why-so-many-performance-efforts-fail-cf06aad89099):
 
