@@ -21,7 +21,7 @@ keypoints:
 - "Request _slightly_ more resources than you will need."
 ---
 
-## Job Scheduler
+## Job scheduler
 
 An HPC system might have thousands of nodes and thousands of users. How do we
 decide who gets what and when? How do we ensure that a task is run with the
@@ -41,9 +41,9 @@ Slurm is not used everywhere, running jobs is quite similar
 regardless of what software is being used. The exact syntax might change, but
 the concepts remain the same.
 
-## Running a Batch Job
+## Running a batch job
 
-### A Basic Script
+### A basic script
 
 The most basic use of the scheduler is to run a command non-interactively. Any
 command (or series of commands) that you want to run on the cluster is called a
@@ -84,7 +84,7 @@ hostname
 You can then use <kbd>Ctrl-O</kbd> followed by <kbd>Enter</kbd> to save the file
 and <kbd>Ctrl-X</kbd> to exit the editor.
 
-> ## Creating Our Test Job
+> ## Creating our test job
 >
 > Run the script. Does it execute on the cluster or just our login node?
 >
@@ -100,7 +100,7 @@ and <kbd>Ctrl-X</kbd> to exit the editor.
 >{: .solution}
 {: .challenge}
 
-### Submitting the Job
+### Submitting the job
 
 This script ran on the login node, but we want to take advantage of
 the compute nodes: we need the scheduler to queue up `example-job.sh`
@@ -179,7 +179,7 @@ We can see all the details of our job, including the partition, user, and also t
 
 You can get a full list of job status codes via the [SLURM documentation](https://slurm.schedmd.com/squeue.html#lbAG).
 
-> ## Where's the Output?
+> ## Where's the output?
 >
 > On the login node, this script printed output to the terminal; but
 > now, when `squeue` shows the job has finished,
@@ -192,7 +192,7 @@ You can get a full list of job status codes via the [SLURM documentation](https:
 {: .callout}
 
 
-## Customising a Job
+## Customising a job
 
 In the job we just ran we didn't specify any detailed requirements for what our job will need. In a
 real-world scenario, that's probably not what we want. Chances are, we will need more cores, more
@@ -249,7 +249,7 @@ Submit the job and monitor its status:
 Fantastic, we've successfully changed the name of our job!
 
 
-### Resource Requests
+### Resource requests
 
 What about more important changes, such as the number of cores and memory for
 our jobs? One thing that is absolutely critical when working on an HPC system
@@ -358,7 +358,7 @@ jobs on the node will be unaffected. This means that one user cannot mess up
 the experience of others, so the only jobs affected by a mistake in scheduling
 will be their own.
 
-## Cancelling a Job
+## Cancelling a job
 
 Sometimes we'll make a mistake and need to cancel a job. This can be done with
 the `scancel` command. Let's submit a job and then cancel it using
@@ -421,7 +421,7 @@ successful.
 >{: .solution}
 {: .challenge}
 
-## Other Types of Jobs
+## Other types of jobs
 
 Up to this point, we've focused on running jobs in batch mode.
 Slurm also provides the ability to start an interactive session.
