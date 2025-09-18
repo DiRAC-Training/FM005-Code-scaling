@@ -26,7 +26,7 @@ Let's assume we're a researcher who has inherited some code from a colleague tha
 
 ## Introduction to a Code Example
 
-Our colleague's code is a trapezoid implementation for calculating π, and can be found at [https://github.com/DiRAC-HPC/HPC-Skills-Pi](https://github.com/DiRAC-HPC/HPC-Skills-Pi). Ordinarily, we'd expect code wish to run on an HPC resource to be more complex to make the most out of such resources, but for the purposes of this lesson, and to ensure our execution times are reasonable, we'll use this instead.
+Our colleague's code is a trapezoid implementation for calculating π and can be found at [https://github.com/DiRAC-HPC/HPC-Skills-Pi](https://github.com/DiRAC-HPC/HPC-Skills-Pi). Ordinarily, we'd expect code wish to run on an HPC resource to be more complex to make the most out of such resources, but for the purposes of this lesson, and to ensure our execution times are reasonable, we'll use this instead.
 
 Fortunately our colleague has implemented this code using MPI, which allows it to take advantage of multiple CPU cores on a machine whilst it is running.
 
