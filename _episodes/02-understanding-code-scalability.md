@@ -14,7 +14,7 @@ objectives:
 - "Summarise the dangers of premature optimisation."
 keypoints:
 - "To make efficient use of parallel computing resources, code needs to be scalable."
-- "Before using new code on DiRAC, it's strong and weak scalability profiles has to be measured."
+- "Before using new code on DiRAC, its strong and weak scalability profiles need to be measured."
 - "Strong scaling is how the solution time varies with the number of processors for a fixed problem size."
 - "Weak scaling is how the solution time varies with the number of processors for a fixed problem size for each processor."
 - "Strong and weak scaling measurements provide good indications for how jobs should be configured to use resources."
