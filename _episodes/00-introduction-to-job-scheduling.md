@@ -133,7 +133,7 @@ In this case, it's telling us that we need to specify more details for submittin
 
 Note that depending on the system, other minimal parameters may also be necessary such as specifying a desired quality of service, or the minimum number of required nodes. But we'll leave these for now.
 
-We can specify them on the command line when submitting our job, like the following. Our job is very short running, so let's just give it a maximum wall time of 1 minute:
+We can specify them on the command line when submitting our job, like the following. Our job is very short running, so let's just give it a maximum walltime of 1 minute:
 
 ```
 >##Slurm in DiRAC
