@@ -426,7 +426,7 @@ successful.
 Up to this point, we've focused on running jobs in batch mode.
 Slurm also provides the ability to start an interactive session.
 
-There are very frequently tasks that need to be done interactively. Creating an
+There are very frequent tasks that need to be done interactively. Creating an
 entire job script might be overkill, but the amount of resources required is
 too much for a login node to handle. A good example of this might be building a
 genome index for alignment with a tool like [HISAT2][hisat]. Fortunately, we
