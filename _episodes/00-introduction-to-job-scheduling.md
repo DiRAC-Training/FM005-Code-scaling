@@ -262,7 +262,7 @@ The following are several key resource requests:
 
 - `--ntasks=<ntasks>` or `-n <ntasks>`: How many CPU cores does your job need, in total?
 
-- `--mem=<megabytes>`: How much memory on a node does your job need in megabytes? You can also specify gigabytes using by adding a little “g” afterwards (example: `--mem=5g`)
+- `--mem=<megabytes>`: How much memory on a node does your job need in megabytes? You can also specify gigabytes using by adding a little “g” afterwards (example: `--mem=5g`).
 
 - `--nodes=<nnodes>` or `-N <nnodes>`: How many separate machines does your job need to run on? Note that if you set `ntasks` to a number greater than what one machine can offer, Slurm will set this value automatically.
 
