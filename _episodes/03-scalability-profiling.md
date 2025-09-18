@@ -209,7 +209,7 @@ Using this formula we can calculate a table of the expected maximum speedup for 
 
 > ## How many cores should we use?
 >
-> From the data you have just calculated, what do you think the maximum number of cores we should use with our code to balance reduced execution time versus efficient usage of compute resources.?
+> From the data you have just calculated, what do you think the maximum number of cores we should use with our code to balance reduced execution time versus efficient usage of compute resources?
 >
 > > ## Solution
 > >
