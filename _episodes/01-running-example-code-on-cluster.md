@@ -205,7 +205,7 @@ So, we can see that as the number of cores increases, the time to run the Pi cod
 > 
 > > ## Solution
 > > 
-> > Edit the submission script and reduce the `--ntasks` parameter to `8`, for example. Resubmit using `sbatch`, and you should see something like the following in the output file:
+> > Edit the submission script and reduce the `--ntasks` parameter to `8`, for example. Resubmit using `sbatch` and you should see something like the following in the output file:
 > > 
 > > ~~~
 > > Running on nodes: m7275
