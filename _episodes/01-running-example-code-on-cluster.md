@@ -45,7 +45,7 @@ $ git clone https://github.com/DiRAC-HPC/HPC-Skills-Pi
 
 You'll find the following in the `Scaling/MPI` subdirectory:
 
-- `mpi_pi.c`: this is the source code file written in the language C. It contains an implementation of an algorithm for calculating π, and makes use of an **MPI** (or Message Passing Interface) implementation to parallelise the calculation of π across multiple cores. Feel free to take a look at it, but you don't need to understand the implementation itself for the purposes of this lesson!
+- `mpi_pi.c`: this is the source code file written in the language C. It contains an implementation of an algorithm for calculating π and makes use of an **MPI** (or Message Passing Interface) implementation to parallelise the calculation of π across multiple cores. Feel free to take a look at it, but you don't need to understand the implementation itself for the purposes of this lesson!
 - `run.sh`: this Bash script first compiles the `mpi_pi.c` code to an executable called `pi`, using `mpicc` (a specialised compiler command for MPI programs). It then runs the compiled Pi code on 1, 2, 4, 8, and finally 16 cores using `mpirun`, which orchestrates the running of our code using MPI over multiple cores.
 
 If we take a look at the script (e.g. by doing `cat run.sh`), we can see it uses `mpicc -o pi mpi_pi.c` to compile it. Once compiled, we should be able to run it. So let's try to compile it manually:
