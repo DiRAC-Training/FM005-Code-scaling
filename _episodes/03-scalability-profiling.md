@@ -207,7 +207,7 @@ Using this formula we can calculate a table of the expected maximum speedup for 
 >{: .solution}
 {: .challenge}
 
-> ## How Many Cores Should we Use?
+> ## How many cores should we use?
 >
 > From the data you have just calculated, what do you think the maximum number of cores we should use with our code to balance reduced execution time versus efficient usage of compute resources.?
 >
@@ -218,13 +218,13 @@ Using this formula we can calculate a table of the expected maximum speedup for 
 {: .challenge}
 
 
-## Calculating a Weak Scaling Profile
+## Calculating a weak scaling profile
 
 Not all codes are suited to strong scaling. As seen in the previous example, even codes with as much as 96% parallelizable code will hit limits. Can we do something to enable moderately parallelizable codes to access the power of HPC systems? The answer is yes, and is demonstrated through *weak scaling*.
 
 The problem with strong scaling is as we increase the number of cores, then the relative size of the parallel portion of our task reduces until it is negligible, and then we can not go any further. The solution is to increase the problem size as you increase the core count -- this is [Gustafson's law](https://en.wikipedia.org/wiki/Gustafson%27s_law). This method tries to keep the proportion of serial time and parallel time the same. We will not get the benefit of reduced time for our calculation, but we will have the benefit of processing more data. Below is a re-run of our π code. But this time, as we increase the cores we also increase the samples used to calculate π.
 
-| Cores (n) | Run Time | Result        | Error         | % Improved Error |
+| Cores (n) | Runtime | Result        | Error         | % Improved Error |
 |-----------|----------|---------------|---------------|------------------|
 | 1         | 4.149807 | 3.14159265459 | 0.00000003182 |                  |
 | 2         | 4.362416 | 3.14159265409 | 0.00000001591 | 50.00%           |
@@ -246,7 +246,7 @@ We can also plot the scaling factor. This is the percentage increase in run time
 
 The above plot shows that the code is highly scalable. We do have an anomaly with our 4 core run, however. It would be good to rerun this to get a more representative sample, but this result is a common occurrence when using shared systems. In this example we only did a single run for each core count. When compiling your data for presentation or submitting applications, it would be better to do many runs and exclude outlying data samples or provide an uncertainty estimate.
 
-> ## Calculate using your Own Results III
+> ## Calculate using your own results III
 > 
 > You can reproduce this weak scaling profile with the Pi code by submitting a job which executes the following instead, in `mpi-pi.sh`:
 > 
@@ -259,7 +259,7 @@ The above plot shows that the code is highly scalable. We do have an anomaly wit
 > By passing this argument, our program is able to provide timings for a weak profile, scaling up the required accuracy for Pi accordingly. Make this amendment, and see how your results compare.
 {: .challenge}
 
-> ## Maximum Cores to Use?
+> ## Maximum cores to use?
 >
 > It would be hard to estimate the max cores we could use from this plot. Can you suggest an approach to get a clearer picture of this code's weak scaling profile?
 >
@@ -269,7 +269,7 @@ The above plot shows that the code is highly scalable. We do have an anomaly wit
 >{: .solution}
 {: .challenge}
 
-> ## Obtaining Resources to Profile your Code
+> ## Obtaining resources to profile your code
 >
 > It may be difficult to profile your code if you do not have the resources at hand, but DiRAC can help. If you are in a position of wanting to use DiRACs facilities but do not have the resources to profile your code, then you can apply for a [Seedcorn project](https://dirac.ac.uk/seedcorn/). This is a short project with up to 100,000 core hours for you to profile and possibly improve your code before applying for a large allocation of time.
 {: .callout}
