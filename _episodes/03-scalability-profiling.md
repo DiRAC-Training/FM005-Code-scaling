@@ -75,11 +75,11 @@ Which could be as high as 1, but probably will never reach that in practice.
 >{: .solution}
 {: .challenge}
 
-When we plot the run time against the number of cores with the results from the above table, we see the following graph:
+When we plot the runtime against the number of cores with the results from the above table, we see the following graph:
 
 ![Time vs Cores for an implementation of Pi]({{ site.url }}{{ site.baseurl }}/fig/scalability-pi-time-vs-cores.png){: width="650px"}
 
-So we can see that as the number of cores increases, the run time of our program decreases. This makes sense, since we are splitting the calculation into smaller pieces which are executed at the same time.
+So we can see that as the number of cores increases, the runtime of our program decreases. This makes sense, since we are splitting the calculation into smaller pieces which are executed at the same time.
 
 ## Amdahl's Law
 
@@ -103,7 +103,7 @@ To simplify the above, we will define the single core execution time as a single
 
 > *Speedup = 1 / ( F<sub>S</sub> + F<sub>P</sub> / n )*
 
-Again this shows us that as the number of cores increases, the serial portion of the code will dominate the run time as when *n = ∞*,
+Again this shows us that as the number of cores increases, the serial portion of the code will dominate the runtime as when *n = ∞*,
 
 > *Max speedup = 1 / F<sub>S</sub>*
 
@@ -232,7 +232,7 @@ The problem with strong scaling is as we increase the number of cores, then the 
 | 8         | 4.356564 | 3.14159265371 | 0.00000000397 | 87.52%           |
 | 16        | 4.643724 | 3.14159265365 | 0.00000000198 | 93.78%           |
 
-As you can see, the run times are similar. Just slightly increasing. However, the accuracy of the calculated value of π has increased. In fact our percentage improvement is nearly in step with the number of cores.
+As you can see, the runtimes are similar. Just slightly increasing. However, the accuracy of the calculated value of π has increased. In fact our percentage improvement is nearly in step with the number of cores.
 
 ![Improved Error vs Cores]({{ site.url }}{{ site.baseurl }}/fig/scalability-improved-error-vs-cores.png){: width="650px"}
 
@@ -240,7 +240,7 @@ When presenting your weak scaling it is common to show how well it scales, this 
 
 ![Weak Scaling - Cores vs Time]({{ site.url }}{{ site.baseurl }}/fig/scalability-weak-scaling-time.png){: width="650px"}
 
-We can also plot the scaling factor. This is the percentage increase in run time compared to base run time for a normal run. In this case we are just using *T<sub>1</sub>*:
+We can also plot the scaling factor. This is the percentage increase in runtime compared to base runtime for a normal run. In this case we are just using *T<sub>1</sub>*:
 
 ![Weak Scaling - Cores vs Scaling Factor]({{ site.url }}{{ site.baseurl }}/fig/scalability-weak-scaling-factor.png){: width="650px"}
 
