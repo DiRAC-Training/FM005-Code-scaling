@@ -9,7 +9,7 @@ questions:
 - "How can I measure how long code takes to run?"
 objectives:
 - "Describe why code scalability is important when using HPC resources."
-- "Explain the difference between wall time and CPU time."
+- "Explain the difference between walltime and CPU time."
 - "Describe the differences between strong and weak scaling."
 - "Summarise the dangers of premature optimisation."
 keypoints:
