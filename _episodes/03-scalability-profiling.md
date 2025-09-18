@@ -23,11 +23,11 @@ keypoints:
 
 Let's now look at how we can determine the scalability characteristics for our example π code.
 
-## Characterising our π Code's Performance
+## Characterising our π code's performance
 
 When we ran our π code in a previous topic "Running Example Code", we got some timing results for running our code over an increasing number of cores. An example run may look something like:
 
-| Cores (n) | Run Time (s) | Result        | Error         | Speedup |
+| Cores (n) | Runtime (s) | Result        | Error         | Speedup |
 |-----------|--------------|---------------|---------------|---------|
 | 1         | 3.99667      | 3.14159265459 | 0.00000003182 | -       |
 | 2         | 2.064242     | 3.14159265459 | 0.00000003182 | 1.94    |
@@ -47,7 +47,7 @@ The speedup efficiency, which measures how efficiently the additional resources 
 
 Which could be as high as 1, but probably will never reach that in practice.
 
-> ## Calculate using your Own Results I
+> ## Calculate using your own results I
 > 
 > Submit your Pi job again, as you did in the previous episode. e.g. with a job script called `mpi-pi.sh`:
 > 
@@ -65,7 +65,7 @@ Which could be as high as 1, but probably will never reach that in practice.
 {: .challenge}
 
 
-> ## What Type of Scaling?
+> ## What type of scaling?
 >
 > Looking at your own results, is this an example of strong or weak scaling?
 >
@@ -107,7 +107,7 @@ Again this shows us that as the number of cores increases, the serial portion of
 
 > *Max speedup = 1 / F<sub>S</sub>*
 
-## What's the Maximum Speedup?
+## What's the maximum speedup?
 
 From the previous section, we know the the maximum speedup achievable is limited to how long a program takes to execute in serial. If we know the portion of time spent in the serial and parallel code, we will theoretically know by how much we can accelerate our program. However, it's not always simple to know the exact value of these fractions. But from Amdahl's law, if we can measure the speedup as a function of number of cores, we can estimate that maximum speed up.
 
@@ -130,12 +130,12 @@ Using the above formula on our example code we get the following results:
 
 We now have an estimated percentage for our serial and parallel portion of our code. As you can see, as the number of cores we use increases, the time spent in the serial portion of the code increases.
 
-> ## Calculate using your Own Results II
+> ## Calculate using your own results II
 >
 > Looking back at your own results from the previous *Calculate using your Own Results I* exercise, create new columns for F<sub>p</sub> and F<sub>s</sub> and calculate the results for each, using the formula above. Finally, calculate the average for each of these as in the table above.
 {: .challenge}
 
-> ## Differences in Serial Timings
+> ## Differences in serial timings
 >
 > Similarly, in this instance we see that serial run times may vary depending on the run. There are several factors that are impacting our code. Firstly as we've discussed, these were run on a working system with other users, so runtime will be affected depending on the load of the system. Throughout DiRAC, it is normal when you run your code to have exclusive access, so this will be less of an issue. But if, for example, your code accesses bulk storage then there may be an impact since these are shared resources. As we are using the MPI library in our code, it would be expected that the serial portion will actually increase slightly with the number of cores due to additional MPI overheads. This will have a noticeable impact if you try scaling your code into the thousands of cores.
 {: .callout}
@@ -162,7 +162,7 @@ Using this formula we can calculate a table of the expected maximum speedup for 
 | 0.99          | 100.00      |
 |---------------|-------------|
        
-> ## Number of Cores vs Expected Speedup
+> ## Number of cores vs expected speedup
 >
 > Using what we've learned about Amdahl's Law and the average percentages of serial and parallel proportions of our example code we calculated earlier in the *Calculate using your Own Results II* exercise, fill in or create a table estimating the expected total speedup and change in speedup when doubling the number of cores, in a table like the following (with the number of cores doubling each time until a total of 4096). Substitute the initial T<sub>1</sub> `???????` value with the initial T<sub>n</sub> value from your own run.
 > 
