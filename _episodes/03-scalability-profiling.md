@@ -18,7 +18,7 @@ keypoints:
 - "Run timings for serial code can vary due to a number of factors such as overall system load and accessing shared resources such as bulk storage."
 - "The Message Passing Interface (MPI) standard is a common way to parallelise code and is available on many platforms and HPC systems, including DiRAC."
 - "When calculating a *strong scaling* profile, the additional benefit of adding cores decreases as the number of cores increases."
-- "The limitation of strong scaling is the fixed problem size, and we can increase the problem size with the core count to obtain a *weak scaling* profile."
+- "The limitation of strong scaling is the fixed problem size and we can increase the problem size with the core count to obtain a *weak scaling* profile."
 ---
 
 Let's now look at how we can determine the scalability characteristics for our example π code.
