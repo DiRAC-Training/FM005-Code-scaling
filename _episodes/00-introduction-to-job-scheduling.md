@@ -31,7 +31,7 @@ and when.
 
 The following illustration compares these tasks of a job scheduler to a waiter
 in a restaurant. If you can relate to an instance where you had to wait for a
-while in a queue to get in to a popular restaurant, then you may now understand
+while in a queue to get into a popular restaurant, then you may now understand
 why sometimes your job does not start instantly as on your laptop.
 
 ![Compare a job scheduler to a waiter in a restaurant]({{ site.url }}{{ site.baseurl }}/fig/restaurant_queue_manager.svg){: width="650px"}
