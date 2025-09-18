@@ -35,7 +35,7 @@ When we ran our π code in a previous topic "Running Example Code", we got some 
 | 8         | 0.687097     | 3.14159265459 | 0.00000003182 | 5.82    |
 | 16        | 0.349366     | 3.14159265459 | 0.00000003182 | 11.44   |
 
-As we saw, by using MPI we were able to reduce the run time of our code by using more cores without affecting the results. The new column `speedup` shown in the table above was calculated using, e.g. with 1 core:
+As we saw, by using MPI we were able to reduce the runtime of our code by using more cores without affecting the results. The new column `speedup` shown in the table above was calculated using, e.g. with 1 core:
 
 > *Speedup = T<sub>1</sub> / T<sub>n</sub>*
 
