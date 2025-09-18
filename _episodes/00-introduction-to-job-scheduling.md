@@ -304,7 +304,7 @@ later topic of this module.
 
 Resource requests are typically binding. If you exceed them, your job will be
 killed. Let's use walltime as an example. We will request 1 minute of
-wall time, and attempt to run a job for two minutes.
+walltime, and attempt to run a job for two minutes.
 
 ```
 [yourUsername@login7a [cosma7] ~]$ cat example-job.sh
