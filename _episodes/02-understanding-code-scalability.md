@@ -59,7 +59,7 @@ So what is *profiling*? Profiling your code is all about understanding its compl
 > ## Profilers
 >
 > Each programming language will typically offer some open-source and/or free tools
-> on the web, with you can use to profile your code. Here are some examples of
+> on the web, which you can use to profile your code. Here are some examples of
 > tools. Note though, depending on the nature of the language of choice, the
 > results can be hard or easy to interpret. In the following we will only list
 > open and free tools:
