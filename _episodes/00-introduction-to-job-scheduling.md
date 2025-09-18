@@ -149,7 +149,7 @@ Submitted batch job 5791510
 ```
 {: .output}
 
-And that's what we need to do to submit a job. Our work is done -- now the
+And that's what we need to do to submit a job. Our work is done; now the
 scheduler takes over and tries to run the job for us.
 
 ### Monitoring our job
