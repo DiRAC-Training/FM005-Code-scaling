@@ -24,7 +24,7 @@ We've seen in the previous episode how to use a job scheduler on an HPC system t
 Let's assume we're a researcher who has inherited some code from a colleague that we wish to run on an HPC cluster resource. It's been developed to run on multiple processor cores on a machine, and in time, we wish to understand how well this code is able to take advantage of more cores, but first we need to get it running on the cluster. First, we'll obtain the code and get it running locally, before creating a job script to submit it to our Slurm cluster.
 
 
-## Introduction to a Code Example
+## Introduction to a code example
 
 Our colleague's code is a trapezoid implementation for calculating π and can be found at [https://github.com/DiRAC-HPC/HPC-Skills-Pi](https://github.com/DiRAC-HPC/HPC-Skills-Pi). Ordinarily, we'd expect code to run on an HPC resource to be more complex to make the most out of such resources, but for the purposes of this lesson, and to ensure our execution times are reasonable, we'll use this instead.
 
@@ -63,13 +63,13 @@ bash: mpicc: command not found...
 Interestingly, it cannot seem to find the compiler. So how do we get access to one?
 
 
-## Setting up an Environment to Run our Code
+## Setting up an environment to run our code
 
 On a typical high-performance computing system, it is seldom the case that the software we want to use is available when we log in. It is installed, but we will need to “load” it before it can run. These packages could be programming language compilers or interpreters, development frameworks or distributions, software packages, or libraries.
 
 A common question is why aren't all these software features accessible immediately? A key reason is that different pieces of software sometimes require different versions of software and libraries. By using a system of *modules*, where each is a self-contained configuration of a software or library package, we can load up a particular software's dependencies explicitly, which avoids any confusion or incompatibility problems. In addition, any dependencies of these modules are also loaded automatically. It also means we can test software against different package versions and implementations separately in a straightforward manner, again, avoiding any confusion as to what is actually being used in any instance. Hence many HPC systems support the loading and unloading of such modules on demand.
 
-> ## So what Modules are Available?
+> ## So what modules are available?
 > 
 > Helpfully, we can see which modules are available on a particular system by using the command `module avail`. This is particularly useful when developing software for systems we wish to support, since it tells us explicitly what software we can use as well as the versions supported for each.
 {: .callout}
@@ -127,7 +127,7 @@ np= 1;    Time=4.062785s;    PI=3.14159265459;	Error=0.00000003182
 ~~~
 {: .output}
 
-> ## How Should I use Login Nodes?
+> ## How should I use login nodes?
 > 
 > So far, we've been testing our codes on a login node. This is fine for short runs and a bit of code testing, but it's very important to note that we should not run anything too intensive (i.e. using too many cores or memory) or long-running directly on a login node, otherwise this could degrade system performance for other users. So we must always remember to use login nodes responsibly!
 {: .callout}
@@ -135,7 +135,7 @@ np= 1;    Time=4.062785s;    PI=3.14159265459;	Error=0.00000003182
 So now we've got our code configured running directly on the resource, let's submit it as a batch job to SLURM.
 
 
-> ## Create a Batch Submission Script
+> ## Create a batch submission script
 > 
 > Now we understand how to run our Pi code on our HPC resource, we now need to create a SLURM batch script (similarly to how we've done in the last episode) to specify the requirements for our job and run it.
 > 
@@ -172,7 +172,7 @@ So now we've got our code configured running directly on the resource, let's sub
 {: .challenge}
 
 
-## Submit and Monitor our Job
+## Submit and monitor our job
 
 Now we have our submission script, we can run the job and monitor it until completion:
 
@@ -199,7 +199,7 @@ np=16;    Time=0.349366s;    PI=3.14159265459;	Error=0.00000003182
 
 So, we can see that as the number of cores increases, the time to run the Pi code diminishes, as we might expect.
 
-> ## What if we Request Too Few CPU cores?
+> ## What if we request too few CPU cores?
 > 
 > Try submitting the job with too few CPU cores for the node by changing your submission script accordingly. What happens?
 > 
