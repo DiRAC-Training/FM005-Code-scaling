@@ -83,7 +83,7 @@ So we can see that as the number of cores increases, the run time of our program
 
 ## Amdahl's Law
 
-If we use *n* processors, we might expect *n* times speedup. But as we've mentioned, this is rarely --if ever-- the case! In a program, there is always some portion of it which *must* be executed in serial (such as initialisation routines, I/O operations and inter-communication) which cannot be parallelised. This limits how much a program can be speeded up, as the program will always take *at least* the length of the serial portion. This is actually known as *Amdahl's Law*, which states that a program's serial parts limit the potential speedup from parallelising the code.
+If we use *n* processors, we might expect *n* times speedup. But as we've mentioned, this is rarely --if ever-- the case! In a program, there is always some portion of it which *must* be executed in serial (such as initialisation routines, I/O operations, and inter-communication) which cannot be parallelised. This limits how much a program can be speeded up, as the program will always take *at least* the length of the serial portion. This is actually known as *Amdahl's Law*, which states that a program's serial parts limit the potential speedup from parallelising the code.
 
 We can think of a program as being operations which *can* and *can't* be parallelised, i.e. the part of the code we can and can't be speeded up. The time taken for a program to finish executing is the sum of the fractions of time spent in the serial and parallel portion of the code,
 
