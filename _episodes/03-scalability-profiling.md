@@ -109,7 +109,7 @@ Again this shows us that as the number of cores increases, the serial portion of
 
 ## What's the maximum speedup?
 
-From the previous section, we know that the maximum speedup achievable is limited to how long a program takes to execute in serial. If we know the portion of time spent in the serial and parallel code, we will theoretically know by how much we can accelerate our program. However, it's not always simple to know the exact value of these fractions. But from Amdahl's law, if we can measure the speedup as a function of number of cores, we can estimate that maximum speed up.
+From the previous section, we know that the maximum speedup achievable is limited to how long a program takes to execute in serial. If we know the portion of time spent in the serial and parallel code, we will theoretically know by how much we can accelerate our program. However, it's not always simple to know the exact value of these fractions. But from Amdahl's law, if we can measure the speedup as a function of number of cores, we can estimate that maximum speedup.
 
 We can rearrange Amdahl's law to estimate the parallel portion *F<sub>P</sub>*,
 
