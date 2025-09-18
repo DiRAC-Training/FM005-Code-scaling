@@ -234,7 +234,7 @@ So, we can see that as the number of cores increases, the time to run the Pi cod
 > > --------------------------------------------------------------------------
 > > ~~~
 > > 
-> > So here we receive a very descriptive error that we need to allocate more "slots", an Open MPI term which in our case means we need to assign more CPU cores, or `tasks` in SLURM terminology, to our job specification as we would expect. Helpfully, it tells us how many we need to specify!
+> > So here we receive a very descriptive error that we need to allocate more "slots", an Open MPI term which in our case means we need to assign more CPU cores --or `tasks` in SLURM terminology-- to our job specification, as we would expect. Helpfully, it tells us how many we need to specify!
 >{: .solution}
 {: .challenge}
 
