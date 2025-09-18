@@ -172,10 +172,10 @@ You may find it looks like this:
 
 We can see all the details of our job, including the partition, user, and also the state of the job (in the `ST` column). In this case, we can see it is in the PD or PENDING state. Typically, jobs go through the following states:
 
-- `PD` - *pending*: sometimes our jobs might need to wait in a queue first before they can be allocated to a node to run
-- `R` - *running*: job has an allocation and is currently running
-- `CG` - *completing*: job is in the process of completing
-- `CD` - *completed*: the job is completed
+- `PD` - *pending*: sometimes our jobs might need to wait in a queue first before they can be allocated to a node to run.
+- `R` - *running*: job has an allocation and is currently running.
+- `CG` - *completing*: job is in the process of completing.
+- `CD` - *completed*: the job is completed.
 
 You can get a full list of job status codes via the [SLURM documentation](https://slurm.schedmd.com/squeue.html#lbAG).
 
