@@ -81,7 +81,7 @@ hostname
 ```
 {: .output}
 
-You can then use <kbd>Ctrl-O</kbd> followed by <kbd>Enter</kbd> to save the file,
+You can then use <kbd>Ctrl-O</kbd> followed by <kbd>Enter</kbd> to save the file
 and <kbd>Ctrl-X</kbd> to exit the editor.
 
 > ## Creating Our Test Job
