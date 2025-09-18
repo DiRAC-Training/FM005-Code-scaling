@@ -32,14 +32,14 @@ There are two primary measures of execution time we need to consider for any giv
 
 ## How can we Characterise a Code's Scalability?
 
-Before we consider running and using code on an HPC resource, we need to understand it's *scaling profile* - so we can determine how the code will scale as we add more CPU cores to running it. That way, when we run code we can request a suitable amount of resources with minimal waste. There are two types of scaling profile we need to determine:
+Before we consider running and using code on an HPC resource, we need to understand its *scaling profile* - so we can determine how the code will scale as we add more CPU cores to running it. That way, when we run code we can request a suitable amount of resources with minimal waste. There are two types of scaling profile we need to determine:
 
 - **Strong scaling:** Strong scaling is how well your code run times changes whilst keeping the problem size constant, but increasing the number of CPU cores (and nodes) being used. Ideally, a 100% scalable application will have a profile that halves the time to complete when given twice as many cores. This is rarely met, as most real world applications have some serial portion or unintended delays (such as communication overheads) which will limit the code's scalability.
 - **Weak scaling:** This is similar to strong scaling, but in this case as we increase the number of cores, we also increase the problem size by the same factor. This type of scaling is more easily met, and should result in a flat line in run times vs. core count if the code has good weak scaling characteristics. In theory this removes the impact of the serial portion of your code, but in reality there is still a limit.
 
  <!-- - the improvement in speed of execution of a task executed on two similar architectures with different resources.  -->
 
-Once we understand these scaling profiles for our code, we'll have an idea of the **speedup** capable when using multiple cores. These measurements give us good indications for how our code should be specified on DiRAC, in terms of the overall job size and the amount of resources that should be requested.
+Once we understand these scaling profiles for our code, we'll have an idea of the **speedup** capability when using multiple cores. These measurements give us good indications for how our code should be specified on DiRAC, in terms of the overall job size and the amount of resources that should be requested.
 
 ## I'm a Developer, Should I Optimise my Code?
 
