@@ -60,7 +60,7 @@ Which could be as high as 1, but probably will never reach that in practice.
 > 
 > > ## Solution
 > > 
-> > You'll notice that your own result timings are different from the ones above, and a key reason is that these were run on a working system with other users, so the runtime will be affected depending on the load of the system.
+> > You'll notice that your own result timings are different from the ones above and a key reason is that these were run on a working system with other users, so the runtime will be affected depending on the load of the system.
 >{: .solution}
 {: .challenge}
 
